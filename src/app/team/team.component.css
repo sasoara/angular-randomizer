@@ -1,0 +1,19 @@
+.team-container {
+  margin-right: 10px;
+}
+
+.team-container ul {
+  border-radius: 24px;
+  background: radial-gradient(
+    700% 250% at 0% -14%,
+    rgb(21 12 98) 15%,
+    rgb(17 166 182) 100%
+  );
+  backdrop-filter: blur(42px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  height: fit-content;
+  min-width: 6rem;
+  width: max-content;
+}
