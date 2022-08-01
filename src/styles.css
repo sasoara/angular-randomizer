@@ -33,3 +33,9 @@ li {
   margin: 2rem;
   width: 12rem;
 }
+
+select, option {
+  border: none;
+  cursor: pointer;
+  font-family: Tahoma, sans-serif;
+}
