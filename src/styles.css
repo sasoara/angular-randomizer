@@ -1,41 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: black;
-  color: aliceblue;
-  font-family: Tahoma, sans-serif;
-  margin: auto;
+    background-color: black;
+    color: aliceblue;
+    font-family: Tahoma, sans-serif;
+    margin: auto;
 }
 
 button {
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-family: Tahoma, sans-serif;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
 }
 
 h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 input {
-  font-family: Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;
 }
 
 li {
-  list-style: none;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .error-msg {
-  color: #ff2d95;
-  padding: 0.5em;
-  margin: 2rem;
-  width: 12rem;
+    color: #ff2d95;
+    padding: 0.5em;
+    margin: 2rem;
+    width: 12rem;
 }
 
 select, option {
-  border: none;
-  cursor: pointer;
-  font-family: Tahoma, sans-serif;
+    border: none;
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
 }

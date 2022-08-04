@@ -1,65 +1,65 @@
 <body>
 <div class="container">
-  <div class="card">
-    <h1>Randomizer</h1>
+    <div class="card">
+        <h1>Randomizer</h1>
 
-    <aside class="dataset-picker">
-      <form>
-        <p>
-          <label>Choose which randomizer dataset</label>
-          <select>
-            <option>Team generator</option>
-            <option>Decision maker</option>
-            <option>Name picker</option>
-            <option>Custom list randomizer</option>
-          </select>
-        </p>
-      </form>
-    </aside>
+        <aside class="dataset-picker">
+            <form>
+                <p>
+                    <label>Choose which randomizer dataset</label>
+                    <select>
+                        <option>Team generator</option>
+                        <option>Decision maker</option>
+                        <option>Name picker</option>
+                        <option>Custom list randomizer</option>
+                    </select>
+                </p>
+            </form>
+        </aside>
 
-    <div class="list-members">
+        <div class="list-members">
 
-      <div class="list-and-counter">
-        <ul>
-          <li *ngFor="let member of members"> {{ member | titlecase}} </li>
-        </ul>
-        <div class="counter-member">
-          <p> {{ members.length }} Members </p>
+            <div class="list-and-counter">
+                <ul>
+                    <li *ngFor="let member of members"> {{ member | titlecase}} </li>
+                </ul>
+                <div class="counter-member">
+                    <p> {{ members.length }} Members </p>
+                </div>
+            </div>
+
+            <div class="add-member-container">
+                <input
+                    #addMemberInput
+                    type="text"
+                    placeholder="Name"
+                    (input)="onNameInput(addMemberInput.value)"
+                    [value]="newMemberName"
+                />
+                <button (click)="addMember()">Add</button>
+            </div>
+
+            <div class="generate-teams-container ">
+                <input
+                    #numberOfTeamsInput
+                    type="number"
+                    placeholder="# of teams"
+                    (input)="onNumberOfTeamsInput(numberOfTeamsInput.value)"
+                    [value]="numberOfTeams"
+                />
+                <button (click)="generateTeams()">Generate</button>
+            </div>
+            <p *ngIf="errorMessage " class="error-msg">{{errorMessage}}</p>
         </div>
-      </div>
-
-      <div class="add-member-container">
-        <input
-          #addMemberInput
-          type="text"
-          placeholder="Name"
-          (input)="onNameInput(addMemberInput.value)"
-          [value]="newMemberName"
-        />
-        <button (click)="addMember()">Add</button>
-      </div>
-
-      <div class="generate-teams-container ">
-        <input
-          #numberOfTeamsInput
-          type="number"
-          placeholder="# of teams"
-          (input)="onNumberOfTeamsInput(numberOfTeamsInput.value)"
-          [value]="numberOfTeams"
-        />
-        <button (click)="generateTeams()">Generate</button>
-      </div>
-      <p *ngIf="errorMessage " class="error-msg">{{errorMessage}}</p>
     </div>
-  </div>
 
-  <div *ngIf="teams.length" class="teams-container">
-    <app-team
-      *ngFor="let team of teams; let i = index"
-      [team]="team"
-      [index]="i"
-    ></app-team>
-  </div>
+    <div *ngIf="teams.length" class="teams-container">
+        <app-team
+                *ngFor="let team of teams; let i = index"
+                [team]="team"
+                [index]="i"
+        ></app-team>
+    </div>
 
 </div>
 </body>
