@@ -1,3 +1,5 @@
+[![Build and Deploy](https://github.com/sasoara/angular-randomizer/actions/workflows/build-deploy.yml/badge.svg?branch=master)](https://github.com/sasoara/angular-randomizer/actions/workflows/build-deploy.yml)
+
 #### :eyes: See it on my webpage: [sasoara.com/angular-randomizer](https://sasoara.com/angular-randomizer)
 # angular-randomizer
 
