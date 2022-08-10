@@ -67,11 +67,11 @@
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    text-shadow: #FF2D95 0px 0px 20px,
-    #FF2D95 0px 0px 30px,
-    #FF2D95 0px 0px 40px,
-    #FF2D95 0px 0px 50px,
-    #FF2D95 0px 0px 75px;
+    text-shadow: #FF2D95 0 0 20px,
+    #FF2D95 0 0 30px,
+    #FF2D95 0 0 40px,
+    #FF2D95 0 0 50px,
+    #FF2D95 0 0 75px;
 }
 
 
