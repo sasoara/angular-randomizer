@@ -8,10 +8,7 @@
                 <p>
                     <label>Choose which randomizer dataset</label>
                     <select>
-                        <option>Team generator</option>
-                        <option>Decision maker</option>
-                        <option>Name picker</option>
-                        <option>Custom list randomizer</option>
+                        <option *ngFor="let dataset of datasets"> {{ dataset.name }} </option>
                     </select>
                 </p>
             </form>
