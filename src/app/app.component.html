@@ -8,10 +8,7 @@
                 <p>
                     <label>Choose which randomizer dataset</label>
                     <select>
-                        <option>Team generator</option>
-                        <option>Decision maker</option>
-                        <option>Name picker</option>
-                        <option>Custom list randomizer</option>
+                        <option *ngFor="let dataset of datasets"> {{ dataset.name }} </option>
                     </select>
                 </p>
             </form>
@@ -21,7 +18,7 @@
 
             <div class="list-and-counter">
                 <ul>
-                    <li *ngFor="let member of members"> {{ member | titlecase}} </li>
+                    <li *ngFor="let member of members"> {{ member | titlecase }} </li>
                 </ul>
                 <div class="counter-member">
                     <p> {{ members.length }} Members </p>
