@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Team generator"
+  },
+  {
+    "id": 2,
+    "name": "Decision maker"
+  },
+  {
+    "id": 3,
+    "name": "Name picker"
+  },
+  {
+    "id": 4,
+    "name": "Custom list randomizer"
+  }
+]

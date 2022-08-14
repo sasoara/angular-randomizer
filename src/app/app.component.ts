@@ -1,4 +1,10 @@
 import {Component} from '@angular/core';
+import datasetData from './datasets.json';
+
+interface Dataset {
+    id: number;
+    name: string;
+}
 
 @Component({
     selector: 'app-root',
@@ -6,6 +12,7 @@ import {Component} from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    datasets: Dataset[] = datasetData;
     newMemberName: string = '';
     members: string[] = [];
     numberOfTeams: number | '' = '';
