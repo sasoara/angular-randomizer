@@ -2,6 +2,7 @@
 
 ## Randomizer (generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2)
 
+[![Website online](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Fsasoara.com%2Fangular-randomizer%2F)](https://sasoara.com/angular-randomizer/)
 [![Build and Deploy](https://github.com/sasoara/angular-randomizer/actions/workflows/build-deploy.yml/badge.svg?branch=master)](https://github.com/sasoara/angular-randomizer/actions/workflows/build-deploy.yml)
 ![Installs](https://img.shields.io/github/downloads/sasoara/angular-randomizer/total)
 [![Version](https://img.shields.io/github/package-json/v/sasoara/angular-randomizer)](https://github.com/sasoara/angular-randomizer/blob/master/package.json)
