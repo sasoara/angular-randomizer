@@ -21,7 +21,7 @@
                     <li *ngFor="let member of members"> {{ member | titlecase }} </li>
                 </ul>
                 <div class="counter-member">
-                    <p> {{ members.length }} Members </p>
+                    <p [textContent]="showCounterMember()"></p>
                 </div>
             </div>
 
