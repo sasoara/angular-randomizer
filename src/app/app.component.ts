@@ -19,8 +19,7 @@ export class AppComponent {
     errorMessage: string = '';
     teams: string[][] = [];
 
-    singular: string = ' Member';
-    plural: string = ' Members';
+    memberString: string = '';
 
     onNameInput(member: string) {
         this.newMemberName = member;
@@ -43,12 +42,8 @@ export class AppComponent {
     }
 
     showCounterMember() {
-        if (this.members.length > 1) {
-            console.log(this.members.length)
-            return [this.members.length + this.plural];
-        } else if (this.members.length === 1) {
-            return [this.members.length + this.singular];
-        } else return [this.members.length + this.plural];
+        this.memberString = this.members.length === 1 ? " Member" : " Members";
+        return this.members.length + this.memberString;
     }
 
     generateTeams() {
