@@ -19,8 +19,6 @@ export class AppComponent {
     errorMessage: string = '';
     teams: string[][] = [];
 
-    memberString: string = '';
-
     onNameInput(member: string) {
         this.newMemberName = member;
     }
@@ -42,8 +40,7 @@ export class AppComponent {
     }
 
     showCounterMember() {
-        this.memberString = this.members.length === 1 ? " Member" : " Members";
-        return this.members.length + this.memberString;
+        return this.members.length + (this.members.length === 1 ? " Member" : " Members");
     }
 
     generateTeams() {
